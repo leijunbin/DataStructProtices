@@ -123,16 +123,21 @@ void deletek(){
 int main(){
     init();
     int n;
+    cout<<"请输入单链表元素个数："<<endl;
     cin>>n;
+    cout<<"请依次输入元素："<<endl;
     for(int i=0;i<n;i++){
         double input;
         cin>>input;
         add(input);
     }
     double res;
+    cout<<"请输入划分值x："<<endl;
     cin>>res;
     sloveProblem(res);
+    cout<<"排序后为：";
     print();
     deletek();
     return 0;
 }
+

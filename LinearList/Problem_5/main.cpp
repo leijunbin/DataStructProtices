@@ -7,10 +7,12 @@ int vis[maxn]={0};
 int main(){
     memset(vis,0,sizeof(vis));
     int n,m;
+    cout<<"请分别输入总数与标记数：";
     cin>>n>>m;
     int puts=0;
     int count=1;
     int number=0;
+    cout<<"结果为：";
     while(puts<n){
         if(count>n){
             count=count%n;
@@ -28,3 +30,4 @@ int main(){
     }
     return 0;
 }
+

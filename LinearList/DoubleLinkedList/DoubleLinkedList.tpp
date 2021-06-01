@@ -28,7 +28,7 @@ DblList<T>::~DblList(){
 
 template <class T>
 int DblList<T>::Length()const{
-    DblNode<T> *current = first->rlink;
+    DblNode<T> *current = first->rLink;
     int count=0;
     while(current != first){
         current = current->rLink;

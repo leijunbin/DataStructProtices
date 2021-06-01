@@ -210,28 +210,32 @@ class Link{
 int main(){
     Link<int> test;
     int n,m;
+    cout<<"请分别输入A链表和B链表中元素个数：";
     cin>>n>>m;
+    cout<<"请输入A链表中元素：";
     for(int i=0;i<n;i++){
         int a;
         cin>>a;
         test.addT(1,a);
     }
+    cout<<"请输入B链表中元素：";
     for(int i=0;i<m;i++){
         int a;
         cin>>a;
         test.addT(2,a);
     }
-
+    cout<<"A,B并运算得：";
     test.add();
     test.printf();
     test.deleteR();
-
+    cout<<"A,B差运算得：";
     test.minu();
     test.printf();
     test.deleteR();
-
+    cout<<"A,B交运算得：";
     test.jiao();
     test.printf();
     test.deleteR();
     return 0;
 }
+
